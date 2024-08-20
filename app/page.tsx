@@ -1,4 +1,5 @@
 import { Hero } from "@/components/Hero";
+import MoodsList from "@/components/Moods/MoodsList/MoodsList";
 import NavBar from "@/components/NavBar/NavBar";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         Discover top-rated <Hero.Highlight>songs</Hero.Highlight> based on your{" "}
         <Hero.Highlight>mood</Hero.Highlight>
       </Hero.Root>
+      <MoodsList />
     </main>
   );
 }
