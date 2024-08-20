@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <div className="relative w-full max-w-3xl flex items-center bg-zinc-900 pt-1 pb-1 pl-1 pr-2 rounded-md gap-x-2 mb-8">
+    <div className="relative w-full max-w-2xl flex items-center bg-zinc-900 pt-1 pb-1 pl-1 pr-2 rounded-md gap-x-2 mb-8">
       <Link href="/">
         <Image
           alt="tape icon"
