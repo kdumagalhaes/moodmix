@@ -1,6 +1,5 @@
-import {Archivo_Black} from "next/font/google"
+import { archivo_black } from "@/constants/fonts";
 
-const archivo_black = Archivo_Black({ subsets: ["latin"], weight: ['400'] });
 export default function HeroRoot({children}: Readonly<{
   children: React.ReactNode;
 }>) {
