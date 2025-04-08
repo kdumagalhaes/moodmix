@@ -1,16 +1,27 @@
 import { Hero } from "@/components/Hero";
-import MoodsList from "@/components/Moods/MoodsList/MoodsList";
-import NavBar from "@/components/NavBar/NavBar";
+import { Button } from "@/components/ui/button";
+import { Music } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-8">
-      <NavBar />
+    <main className="flex min-h-screen flex-col items-center justify-center p-8">
       <Hero.Root>
-        Discover top-rated <Hero.Highlight>songs</Hero.Highlight> based on your{" "}
-        <Hero.Highlight>mood</Hero.Highlight>
+        <Music className="h-12 w-12 text-primary" />
+        <Hero.Cta>
+          Discover <Hero.Highlight>Music</Hero.Highlight> by{" "}
+          <Hero.Highlight>Mood</Hero.Highlight>
+        </Hero.Cta>
+        <Hero.Description>
+          Find the perfect soundtrack for your emotions. Let your mood guide you
+          to new musical discoveries.
+        </Hero.Description>
+        <Link href="/discover" className="mt-16">
+          <Button size="lg" className="text-lg">
+            Start Discovering
+          </Button>
+        </Link>
       </Hero.Root>
-      <MoodsList />
     </main>
   );
 }

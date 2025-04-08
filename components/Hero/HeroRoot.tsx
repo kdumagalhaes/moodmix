@@ -1,9 +1,7 @@
-import { archivo_black } from "@/constants/fonts";
-
 export default function HeroRoot({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <h1 className={`text-4xl ${archivo_black.className}`}>{children}</h1>;
+  return <div className="flex flex-col items-center gap-4">{children}</div>;
 }
